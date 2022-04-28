@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>lesson16</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="header">я -- header</div>
+		<div class="main">
+			<section class="doggie">
+				<div class="doggie__container">
+					<form action="#" class="doggie__form form-doggie">
+						<h1 class="doggie__form-title">Make an appointment</h1>
+						<div class="form-doggie__inputs">
+
+							<div class="form-doggie__input-box">
+								<input type="text" name="username" required placeholder="Name" autocomplete="off" class="form-doggie__input">
+							</div>
+
+							<div class="form-doggie__input-box">
+								<input type="text" name="usermail" required placeholder="Email" autocomplete="off" class="form-doggie__input">
+							</div>
+
+							<div class="form-doggie__input-box">
+								<input type="text" name="userphone" required placeholder="Phone Number" autocomplete="off" class="form-doggie__input">
+							</div>
+
+							<div class="form-doggie__input-box">
+								<select name="userselect" autocomplete="off" class="form-doggie__input">
+									<option value="select">Select Service</option>
+									<option value="1">Pet Boarding (No Cages)</option>
+									<option value="2">Pet Daycare</option>
+									<option value="3">Pet Day Spa & Grooming</option>
+									<option value="4">Custom Meal Plans</option>
+									<option value="5">Pet Training</option>
+									<option value="6">Shop Our Store!</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-doggie__textarea-box"><textarea name="text" class="form-doggie__textarea" required placeholder="Tell us about your puppers include his/her name"></textarea></div>
+						<button type="submit" class="form-doggie__button">Make an Appointment</button>
+					</form>
+				</div>
+			</section>
+			<!-- ===========regestered custemers================ -->
+			<section class="customer-login">
+				<div class="customer-login__container">
+					<div class="customer-login__block">
+						<h2 class="customer-login__title">Registered Customers</h2>
+
+						<div class="customer-login__note">If you have an account, sign in with your email address.</div>
+
+						<form action="#" class="customer-login__form">
+
+							<div class="customer-login__email-line line-customer">
+								<label for="customer-email" class="line-customer__label">Email <span>*</span></label>
+								<input type="text" id="customer-email" required placeholder="Your Name">
+							</div>
+
+							<div class="customer-login__password-line  line-customer">
+								<label for="customer-password" class="line-customer__label">Password <span>*</span></label>
+								<input type="text" id="customer-password" required placeholder="Your Name">
+							</div>
+
+							<div class="customer-login__sign-in">
+								<button type="submit" class="customer-login__button">Sign In</button>
+								<a href="#" class="customer-login__link">Forgot Your Password?</a>
+							</div>
+
+						</form>
+					</div>
+				</div>
+			</section>
+
+
+			<!-- =====================Summary================= -->
+
+			<section class="summary">
+				<div class="summary__container">
+					<div class="summary__block">
+						<h4 class="summary__title">Summary</h4>
+						<div class="summary__subtitle">Estimate Shipping and Tax</div>
+						<div class="summary__note">Enter your destination to get a shipping <br> estimate.</div>
+
+						<form action="#" class="summary__form form-summary">
+							<div class="summary__line-country">
+								<label for="country" class="form-summary__label">Country</label>
+								<select id="country" autocomplete="off" name="select-country">
+
+									<option value="1">Australia</option>
+									<option value="2">South Korea</option>
+									<option value="3">England</option>
+									<option value="4">Japan</option>
+									<option value="5">New Zenland</option>
+
+								</select>
+
+							</div>
+
+							<div class="form-summary__line-state">
+								<label for="state" class="form-summary__label">State/Province</label>
+								<input id="state" type="text" class="form-summary__state" autocomplete="off" required>
+							</div>
+
+							<div class="form-summary__line-code">
+								<label for="code" class="form-summary__label">Zip/Postal Code</label>
+								<input id="code" type="text" class="form-summary__code" autocomplete="off">
+							</div>
+
+							<!-- ====================радиокнопки============= -->
+
+							<div class="form-summary__radio radio">
+
+								<label for="rate" class="form-summary__label">Standard Rate</label>
+								<div class="radio__line">
+									<input checked id="rate" type="radio" name="price" value="1" class="radio__item"> <label for="rate" class="radio__label-right">Price may vary depending on the item/destination. Shop Staff will contact you. $21.00</label>
+								</div>
+
+								<label for="store" class="form-summary__label">Pickup from store</label>
+								<div class="radio__line">
+									<input id="store" type="radio" name="price" value="2" class="radio__item">
+									<label for="store" class="radio__label-right">1234 Street Adress City Address, 1234 $0.00</label>
+								</div>
+							</div>
+							<!-- =================================== -->
+
+							<div class="summary__subtitle">Apply Discount Code</div>
+							<div class="form-summary__line-discount">
+								<label for="discount" class="form-summary__label">Enter discount code</label>
+								<input id="discount" type="text" class="form-summary__discount" autocomplete="off" placeholder="Enter Discount code">
+							</div>
+							<button type="submit" class="summary__button">Apply Discount</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="footer"> я -- footer</div>
+	</div>
+
+</body>
+
+</html>
